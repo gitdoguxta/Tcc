@@ -1,0 +1,363 @@
+/* RESET GERAL: remove margens/paddings e define box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Scroll suave ao navegar */
+html {
+  scroll-behavior: smooth;
+}
+
+/* BODY: fundo preto com imagem, texto branco e fonte padrão */
+body {
+  background-color: #243444;
+  background-image: url(bgcinza.jg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+/* TOPO / MENU: fundo laranja, padding e largura total */
+.topo {
+  background-color: #f38c14;
+  width: 100%;
+  padding: 15px 20px;
+  border-bottom: 3px solid #243444;
+}
+
+/* Container do cabeçalho centralizado, flexível */
+.cabecalho {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+}
+
+/* Logo redimensionada */
+.logo {
+  max-width: 150px;
+  height: auto;
+}
+
+/* Botão hamburguer só aparece em mobile */
+.hamburguer {
+  display: none;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Menu desktop - links horizontais */
+.menu {
+  display: flex;
+}
+
+.lista {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.item a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.item:hover a {
+  color: black;
+}
+
+/* Menu mobile - mostra botão hamburguer e menu vertical */
+@media (max-width: 768px) {
+  .hamburguer {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    background-color: #f38c14;
+    padding: 20px 0;
+  }
+
+  .menu.ativo {
+    display: flex;
+  }
+
+  .lista {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+/* Container centralizador para as seções iniciais */
+.container {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Texto com largura máxima e alinhado ao centro */
+.texto {
+  max-width: 900px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* Título principal */
+.titulo {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* Alterna fundo laranja e transparente nas seções principais */
+section:nth-of-type(odd) {
+  background-color: #f38c14; /* fundo laranja */
+  padding: 60px 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+section:nth-of-type(even) {
+  background: transparent; /* sem fundo */
+  padding: 60px 20px;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+/* Títulos com fundo escuro e bordas arredondadas */
+.zxc,
+.qweh2 {
+  background-color: #243444;
+  border-radius: 50px;
+  padding: 1rem 2rem;
+  color: white;
+  width: fit-content;
+  margin: 0 auto 30px;
+}
+
+.equipetitulo{
+    background-color: #f38c14;
+  border-radius: 50px;
+  padding: 1rem 2rem;
+  color: white;
+  width: fit-content;
+  margin: 0 auto 30px;
+}
+
+
+/* Parágrafos nas seções */
+.qwert p,
+.zxc p {
+  font-size: 24px;
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+/* Container flexível para serviços e equipe */
+.principal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Caixa individual de serviços e equipe com fundo escuro */
+.caixa {
+  background-color: #f38c14;
+  border-radius: 10px;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  color: white;
+}
+
+/* Efeito hover na caixa (eleva) */
+.caixa:hover {
+  transform: translateY(-5px);
+}
+
+/* Títulos dentro das caixas */
+.caixa h1,
+.caixa h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Parágrafo dentro da caixa */
+.caixa p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Fotos da equipe com bordas arredondadas e destaque laranja */
+.equipe-caixa img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 3px solid #f38c14;
+}
+
+.topo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: #f38c14;
+  padding: 15px 20px;
+}
+
+
+/* BOTÕES FLUTUANTES WhatsApp e Instagram */
+.icon,
+.insta {
+  position: fixed;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  z-index: 100;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.icon {
+  bottom: 60px;
+  background-color: #01e675; /* verde WhatsApp */
+}
+
+.insta {
+  bottom: 130px;
+  background-color: #833AB4; /* roxo Instagram */
+}
+
+/* RODAPÉ simples e centralizado */
+.rodape {
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+  background-color: #f38c14;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Seção de Contato / Formulário */
+.contato {
+  background-color: #f38c14;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 10px;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.contato .subtexto {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.formulario textarea {
+  resize: vertical;
+}
+
+.formulario button {
+  background-color: #243444;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario button:hover {
+  background-color: #1a2531;
+}
+
+@media (max-width: 480px) {
+  .contato .subtexto {
+    font-size: 16px;
+  }
+
+  .formulario input,
+  .formulario textarea {
+    font-size: 14px;
+  }
+
+  .formulario button {
+    font-size: 16px;
+  }
+}
+
+.servicoscaixa{
+    background-color: #243444;
+  border-radius: 10px;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  color: white;
+}

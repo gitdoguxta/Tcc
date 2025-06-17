@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Lumina+</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Ícones do FontAwesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  
+</head>
+<body>
+
+
+  
+  <!-- Cabeçalho laranja com logo, menu e botão hamburguer -->
+  <header class="topo">
+    <div class="cabecalho">
+      <img src="Cópia de Lumina+.png" alt="Logo da Lumina+" class="logo" />
+      <button class="hamburguer" aria-label="Abrir menu">
+        <i class="fas fa-bars" aria-hidden="true"></i>
+      </button>
+      <nav class="menu" role="navigation" aria-label="Menu principal">
+        <ul class="lista">
+          <li class="item"><a href="#inicio">Início</a></li>
+          <li class="item"><a href="#servicos">Serviços</a></li>
+          <li class="item"><a href="#equipe">Equipe</a></li>
+          <li class="item"><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Seção de boas-vindas -->
+  <main id="inicio" class="container inicio">
+    <section class="texto">
+      <h1 class="titulo">Olá! Somos a Lumina+</h1>
+      <p>
+        A Lumina+ é uma agência de marketing nascida na periferia, com um propósito muito claro: fortalecer os empreendedores e negócios que surgem dentro da quebrada. Nossa missão é dar visibilidade, voz e valor às marcas e projetos que nascem nas comunidades. Sabemos do potencial que existe por aqui — e queremos ajudar essas ideias a brilharem.
+      </p>
+    </section>
+  </main>
+
+  <!-- Seção Serviços (com fundo laranja) -->
+  <section class="qwert servicos" >
+    <h1 class="zxc">O que fazemos?</h1>
+    <p>
+      Nosso trabalho começa entendendo a história de cada cliente. Cada projeto é único, e por isso criamos estratégias personalizadas que se conectam com a identidade e os objetivos de cada negócio. Atuamos desde o desenvolvimento de sites até a criação e gestão de perfis no Instagram, sempre com foco em aumentar a presença digital e atrair o público certo.
+    </p>
+  </section>
+
+  <!-- Seção Por que escolher (fundo transparente) -->
+  <section class="qwert equipe-bg">
+    <h2 class="equipetitulo">Por que escolher a Lumina+?</h2>
+    <p>
+      Porque acreditamos no poder transformador do marketing digital. Nossa equipe é formada por profissionais apaixonados e comprometidos com o sucesso dos nossos clientes. Trabalhamos com transparência, criatividade e dedicação, sempre buscando resultados reais e duradouros.
+    </p>
+  </section>
+  
+  <!-- Seção Nossos Serviços (fundo laranja) -->
+  <section class="trabalho servicos-bg" id="servicos">
+    <h2 class="zxc">Nossos serviços</h2>
+    <div class="principal imagem">
+      <div class="servicoscaixa">
+        <h3>Branding</h3>
+        <p>Branding é o processo de construção e gestão de uma marca. Vai muito além de criar um nome ou logotipo bonito.</p>
+      </div>
+      <div class="servicoscaixa">
+        <h3>Mídia Social</h3>
+        <p>Envolve identidade visual, propósito, tom de voz e a experiência que a marca transmite nas redes.</p>
+      </div>
+      <div class="servicoscaixa">
+        <h3>Sites</h3>
+        <p>Criamos sites modernos e responsivos, com a cara da sua marca e voltados para gerar resultados.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Equipe (fundo transparente) -->
+  <section class="trabalho equipe-bg" id="equipe">
+    <h2 class="equipetitulo">Nossa Equipe</h2>
+    <div class="principal imagem">
+      <div class="caixa equipe-caixa">
+        <img src="gustavo.jpg" alt="Gustavo Silva - Diretor Criativo" />
+        <h3>Gustavo Silva</h3>
+      </div>
+      <div class="caixa equipe-caixa">
+        <img src="vitoria.jpg" alt="Vitoria - Social Media" />
+        <h3>Vitoria</h3>
+      </div>
+      <div class="caixa equipe-caixa">
+        <img src="anna.jpg" alt="Anna - Designer Gráfica" />
+        <h3>Anna</h3>
+      </div>
+      <div class="caixa equipe-caixa">
+        <img src="yasmin.jpg" alt="Yasmin - Atendimento" />
+        <h3>Yasmin</h3>
+      </div>
+      <div class="caixa equipe-caixa">
+        <img src="joana.jpg" alt="Joana - Analista de Conteúdo" />
+        <h3>Joana</h3>
+      </div>
+      <div class="caixa equipe-caixa">
+        <img src="pedro.jpg" alt="Pedro - Desenvolvedor Web" />
+        <h3>Pedro</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Botões flutuantes WhatsApp e Instagram -->
+  <a href="https://api.whatsapp.com/send?phone=5511976558311" class="icon" target="_blank" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="https://www.instagram.com/sou_lumina?igsh=dHo5OTF6cDcxbWh1" class="insta" target="_blank" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+
+
+
+
+
+
+
+
+
+<!-- Seção de Contato / CTA -->
+<section class="contato" id="contato">
+  <h2 class="zxc">Entre em Contato</h2>
+  <p class="subtexto">Tem um projeto em mente ou quer saber mais? Fale com a gente!</p>
+  <form action="https://formsubmit.co/luminamais.consultoria@gmail.com" method="POST" class="formulario">
+    <!-- Configurações Formsubmit -->
+    <input type="hidden" name="_captcha" value="false" />
+    <input type="hidden" name="_subject" value="Nova mensagem do site Lumina+" />
+    <input type="hidden" name="_template" value="table" />
+    
+    <!-- Campos visíveis -->
+    <input type="text" name="nome" placeholder="Seu nome" required />
+    <input type="email" name="email" placeholder="Seu e-mail" required />
+    <textarea name="mensagem" placeholder="Sua mensagem" rows="5" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Rodapé -->
+  <footer class="rodape">
+    <p>© <span id="ano"></span> Lumina+. Todos os direitos reservados.</p>
+    <p>Desenvolvido por Lumina+</p>
+  </footer>
+
+  <!-- Script para menu hamburguer e ano dinâmico -->
+  <script>
+    const btnHamburguer = document.querySelector('.hamburguer');
+    const menu = document.querySelector('.menu');
+
+    btnHamburguer.addEventListener('click', () => {
+      menu.classList.toggle('ativo');
+    });
+
+    // Fecha o menu ao clicar em um link (mobile)
+    document.querySelectorAll('.menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        menu.classList.remove('ativo');
+      });
+    });
+
+    // Ano dinâmico no rodapé
+    document.getElementById('ano').textContent = new Date().getFullYear();
+  </script>
+
+
+<!-- VLibras Plugin -->
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+
+
+</body>
+</html>
