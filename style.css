@@ -171,6 +171,11 @@ section:nth-of-type(even) {
   margin: 20px auto;
 }
 
+.linkedin{
+ text-decoration: none;
+ color: white;
+}
+
 /* Container flexível para serviços e equipe */
 .principal {
   display: flex;
